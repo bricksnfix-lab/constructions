@@ -70,4 +70,5 @@ blockquote cite{display:block;margin-top:8px;color:var(--text)}
 @media (max-width:700px){
   .form__row{grid-template-columns:1fr}
   .facts{grid-template-columns:repeat(2,1fr)}
+  #work.section{ padding-top:24px; } /* overrides the 48px only for this section */
 }
