@@ -169,11 +169,18 @@
     <p class="copy">© <span id="year"></span> Bricks & Fix Constructions</p>
   </footer>
 
-  <div id="lightbox" class="lightbox" aria-hidden="true">
-    <button class="lightbox__close" aria-label="Close" onclick="closeLightbox()">×</button>
-    <img id="lightboxImg" alt="">
-    <figcaption id="lightboxCap"></figcaption>
+<div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+  <div class="lightbox__bg" id="lightboxBg">
+    <button class="lightbox__close" aria-label="Close" id="lightboxClose">×</button>
+
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <div class="lightbox__frame" role="document">
+      <img id="lightboxImg" alt="">
+      <figcaption id="lightboxCap"></figcaption>
+    </div>
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next">›</button>
   </div>
+</div>
 
   <script src="script.js" defer></script>
 </body>
